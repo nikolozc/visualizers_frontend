@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*Header*/
+
+.header{
+  width: 100%;
+  background-image: linear-gradient(to right, #48c6ef, #6f86d6, #0048a7);
+  background-repeat: no-repeat;
+  font-family: 'IBM Plex Mono';
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+  border-bottom: solid black;
+}
+
+.banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.navBar{
+  display: flex;
+  flex-direction: row;
+}
+
+.navBarElement{
+  margin: 0 150px 10px 150px;
+  width: 25%;
+  background: none;
+  border: solid black;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: inherit;
+  letter-spacing: inherit;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+                                        /*Main*/
+/*Main*/
+
+.mainContent{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transform: translateX(-250px);
+}
+
+.logIn, .signUp{
+  margin-right: 300px;
+}
+
+.loginForm, .signupForm{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'IBM Plex Mono';
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+}
+
+.loginFormInput, .signupFormInput{
+  margin: 20px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainLoginBtn, .mainSignupBtn{
+  margin: 20px 0 10px 0;
+  font-family: 'IBM Plex Mono';
+  font-size: auto;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+  background: none;
+  border: solid black;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 8px 5px black;
+}
+
+.mainLoginBtn:hover, .mainSignupBtn:hover{
+  background-image: linear-gradient(to right top, #48c6ef, #6f86d6, #0048a7);
+}
+
+.mainLoginBtn:active, .mainSignupBtn:active{
+  background-image: radial-gradient(#48c6ef, #6f86d6, #0048a7);
+  box-shadow: 0 6px 5px black;
+  transform: translateY(4px);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+                                            /*Account*/
+
+/*Account*/
+
+.mainAccount{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*AccountSideBar*/
+
+.accountSideBar{
+  width: 25%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: solid black;
+}
+
+.addDataSetForm{
+  width: 80%;
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'IBM Plex Mono';
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+}
+
+.addDataSetNameInput{
+  margin: 20px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.accountSideBarAddBtn{
+  margin: 20px 0 10px 0;
+  font-family: 'IBM Plex Mono';
+  font-size: auto;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+  background: none;
+  border: solid black;
+  outline: none;
+  cursor: pointer;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*DataSetList*/
+
+.dataSetList{
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*DataSetItem*/
+
+.dataSetItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  text-align: center;
+  margin: 20px 0 20px 0;
+  border: solid black;
+}
+
+.dataSetItemHeader{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.dataSetItemDeleteBtn{
+  position: absolute;
+  margin-top: 10px;
+  top: 0px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: solid black;
+  font-family: 'IBM Plex Mono';
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+  outline: none;
+  cursor: pointer;
+}
+
+.dataSetItemButtons{
+  margin-bottom: 20px;
+}
+
+.dataSetItemButton{
+  cursor: pointer;
+  background: none;
+  border: solid black;
+  margin: 0 10px 0 10px;
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+  outline: none;
+}
+
+.dataSetItemElements{
+  background-image: linear-gradient(to right, #48c6ef, #6f86d6, #0048a7);
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  border: solid black;
+  margin-bottom: 25px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*DataSetElement*/
+
+.dataSetElement{
+  margin: 5px 10px 5px 10px;
+  font-family: 'IBM Plex Mono';
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*all buttons*/
+
+.accountSideBarAddBtn, .dataSetItemDeleteBtn, .dataSetItemButton{
+  box-shadow: 0 8px 5px black;
+}
+.accountSideBarAddBtn:hover, .dataSetItemDeleteBtn:hover, .dataSetItemButton:hover{
+  background-image: linear-gradient(to right top, #48c6ef, #6f86d6, #0048a7);
+}
+.accountSideBarAddBtn:active, .dataSetItemDeleteBtn:active, .dataSetItemButton:active{
+  background-image: radial-gradient(#48c6ef, #6f86d6, #0048a7);
+  box-shadow: 0 6px 5px black;
+  transform: translateY(4px);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+                                            /*Graph*/
+
+/*Graph*/
+
+.mainGraph{
+  border-bottom: black;
+  border-bottom-style: solid;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*GraphsOptionsBar*/
+
+.graphsOptionsBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: solid black;
+}
+
+.graphSpeedSlider{
+  display: flex;
+  flex-direction: column;
+  opacity: 0.75;
+}
+
+.graphSpeedSlider:hover{
+  opacity: 1;
+}
+
+.sortButton{
+  margin: 10px 20px 10px 20px;
+  border-radius: 200px;
+  border: 0px;
+  background-image: linear-gradient(to right top, #48c6ef, #6f86d6, #0048a7);
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 8px 5px #4648a0
+}
+
+.sortButton:hover{
+  background-image: linear-gradient(to right top, #26687e, #2f479c, #002c66);
+}
+
+.sortButton:active{
+  background-image: radial-gradient(#26687e, #2f479c, #002c66);
+  box-shadow: 0 6px 5px #2b2c61;
+  transform: translateY(4px);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*ArrayItem / Content*/
+
+.content{
+  width: 100%;
+  height: 440px;
+  border-bottom: solid black;
+  margin-bottom: 10px;
+}
+
+.arrayElement{
+  float: left;
+  background-color: #6f86d6;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  line-height: 1.5em;
+  box-shadow: 5px 0 5px #2b3455;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*SortInfo*/
+
+.sortInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sortInfoP{
+  font-weight: bolder;
+  margin: 0 20px 0 20px; 
+}
